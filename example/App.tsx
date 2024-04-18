@@ -5,9 +5,8 @@ import * as RustExpoModule from 'rust-expo-module';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>"Foobar"</Text>
-      <Text>{RustExpoModule.rustAdd(10, 10)}</Text>
-      <Text>{RustExpoModule.rustHelloWorld()}</Text>
+      <Text>"Rust add 2 and 4: " {RustExpoModule.rustAdd(2, 4)}</Text>
+      <Text>"String from rustHelloWorld: "{RustExpoModule.rustHelloWorld()}</Text>
     </View>
   );
 }
